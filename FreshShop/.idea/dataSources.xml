@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db" uuid="898972ba-d6a7-4477-9f2d-9083f80a49d1">
+    <data-source source="LOCAL" name="db" uuid="b909bb3f-3de5-4132-80e3-52cbe21e04b4">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:D:\DjangoShopProject\DjangoShop\FreshShop\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:D:\ShopDjango\DjangoShop\FreshShop\db.sqlite3</jdbc-url>
       <driver-properties>
         <property name="enable_load_extension" value="true" />
       </driver-properties>

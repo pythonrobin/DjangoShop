@@ -13,12 +13,12 @@ class Seller(models.Model):
 
 class StoreType(models.Model):
     store_type = models.CharField(max_length=32,verbose_name="类型名称")
-    type_descripton = models.TextField(verbose_name="类型名称")
+    type_description = models.TextField(verbose_name="类型名称")
 
 class Store(models.Model):
     store_name = models.CharField(max_length=32, verbose_name="店铺名称")
     store_address = models.CharField(max_length=32,verbose_name="店铺地址")
-    store_descripton = models.TextField(verbose_name="店铺描述")
+    store_description = models.TextField(verbose_name="店铺描述")
     store_logo = models.ImageField(upload_to="store/images",verbose_name="店铺logo")
     store_phone = models.CharField(max_length=32,verbose_name="店铺电话")
     store_money = models.FloatField(verbose_name="店铺注册资金")
@@ -34,6 +34,7 @@ class Goods(models.Model):
     goods_description = models.TextField(verbose_name="商品描述")
     goods_date = models.DateField(verbose_name="出厂日期")
     goods_safeDate = models.IntegerField(verbose_name="保质期")
+    goods_under = models.IntegerField(verbose_name="商品状态",default=1)
 
     store_id = models.ManyToManyField(to=Store,verbose_name="商品店铺")
 
